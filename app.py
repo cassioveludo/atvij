@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import re
 from io import BytesIO
+import openpyxl
 
 # Your existing functions
 def parse_pje(pje_text):
