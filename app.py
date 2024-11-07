@@ -55,7 +55,7 @@ st.write("Faça o upload de um arquivo de Excel para processar os dados.")
 uploaded_file = st.file_uploader("Escolha um arquivo de Excel", type="xlsx")
 
 if uploaded_file:
-    data = pd.read_excel(uploaded_file)
+    data = pd.read_excel(uploaded_file, engine='openpyxl')
 
     # Parse data using your functions
     parsed_pje = data['PJE'].apply(parse_pje)
