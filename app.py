@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import re
-from openpyxl.styles import Alignment
 from io import BytesIO
 
 # Your existing functions
